@@ -22,6 +22,10 @@
 .background-1 {
   background-color: $color-background;
 }
+.hidden {
+  opacity: 0;
+  display: none;
+}
 
 .margin-top-big {
   margin-top: 8rem;

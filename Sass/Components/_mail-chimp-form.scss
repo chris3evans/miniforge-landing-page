@@ -1,0 +1,59 @@
+.mail-chimp {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 50;
+}
+
+#mc_embed_signup {
+  position: fixed;
+  width: 80%;
+  top: 18rem;
+  z-index: 30;
+  height: 32rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.mc-field-group {
+  &:not(:last-of-type) {
+    margin: 1.5rem 0rem;
+  }
+}
+
+.label {
+  color: $color-background;
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+.button {
+  padding: 2rem 6rem;
+  background-color: $color-button !important;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+
+  &:hover {
+    background-color: #ff0000 !important;
+    transform: translateY(-0.2rem);
+    box-shadow: 0rem 1rem 3rem rgba(black, 0.5);
+  }
+  &:active {
+    transform: translateY(0rem);
+    box-shadow: none;
+    color: $color-text-important;
+  }
+}
+
+// Close form
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  &--icon {
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+  }
+}
