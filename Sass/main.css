@@ -1,0 +1,297 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3rem;
+  background-color: #292929;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.secondary--heading {
+  font-size: 5.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.text {
+  font-size: 3.5rem;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.margin-top-big {
+  margin-top: 8rem;
+}
+
+.margin-top-med {
+  margin-top: 6rem;
+}
+
+.margin-top-small {
+  margin-top: 3rem;
+}
+
+.margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.margin-bottom-med {
+  margin-bottom: 6rem;
+}
+
+.margin-bottom-small {
+  margin-bottom: 3rem;
+}
+
+.about--list {
+  list-style: none;
+  display: inline-block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about--list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about--list__item:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.about--list__icon {
+  fill: white;
+  height: 10rem;
+  width: 10rem;
+  margin-right: 2rem;
+}
+
+.testimonial--stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem 0rem;
+}
+
+.testimonial--stars__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 0.1rem solid #a6a6a6;
+  padding: 2rem;
+}
+
+.testimonial--stars__item {
+  list-style: none;
+}
+
+.testimonial--stars__item:not(:last-of-type) {
+  margin-right: 2rem;
+}
+
+.testimonial--stars__icon {
+  font-size: 8rem;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(yellow), to(#ffa600));
+  background-image: linear-gradient(to right, yellow, #ffa600);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.section-about {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../Images/Image1.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Images/Image1.jpg");
+  background-size: cover;
+  padding: 2rem;
+}
+
+.section-about .about {
+  width: 100%;
+}
+
+.section-about .about--rewards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.col-1-of-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc((100% - 6rem) / 2);
+          flex: 0 0 calc((100% - 6rem) / 2);
+}
+
+.col-1-of-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc((100% - (2 * 6rem)) / 3);
+          flex: 0 0 calc((100% - (2 * 6rem)) / 3);
+}
+
+.col-2-of-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(2 * ((100% - (2 * 6rem)) / 3) + 6rem);
+          flex: 0 0 calc(2 * ((100% - (2 * 6rem)) / 3) + 6rem);
+}
+
+.col-1-of-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc((100% - (3 * 6rem)) / 4);
+          flex: 0 0 calc((100% - (3 * 6rem)) / 4);
+}
+
+.col-2-of-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(2 * ((100% - (3 * 6rem)) / 4) + 6rem);
+          flex: 0 0 calc(2 * ((100% - (3 * 6rem)) / 4) + 6rem);
+}
+
+.col-3-of-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc( 3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
+          flex: 0 0 calc( 3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
+}
+
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.image--logo {
+  width: 40%;
+}
+
+.section-testimonials .slider {
+  width: 100%;
+  height: 70rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-testimonials .slider .slide {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.section-testimonials .testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  position: absolute;
+}
+
+.section-testimonials .testimonial--heading {
+  margin-bottom: 6rem;
+}
+
+.section-testimonials .testimonial--content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4rem;
+}
+
+.section-testimonials .testimonial--content #left-quotation-mark,
+.section-testimonials .testimonial--content #right-quotation-mark {
+  position: absolute;
+  font-size: 45rem;
+  line-height: 1rem;
+  color: #a6a6a6;
+  z-index: 3;
+}
+
+.section-testimonials .testimonial--content #left-quotation-mark {
+  top: 9rem;
+  left: -1rem;
+}
+
+.section-testimonials .testimonial--content #right-quotation-mark {
+  bottom: -7rem;
+  right: -1rem;
+}
+
+.section-testimonials .testimonial--content__image {
+  width: 80%;
+  margin-bottom: 8em;
+  height: auto;
+  position: relative;
+  z-index: 5;
+}
+
+#slide--2 {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+/*# sourceMappingURL=main.css.map */
