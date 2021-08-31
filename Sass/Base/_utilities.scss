@@ -2,6 +2,26 @@
   display: flex;
   justify-content: center;
 }
+.align {
+  display: flex;
+  align-items: center;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+.position-relative {
+  position: relative;
+}
+.padding-med {
+  padding: 3rem;
+}
+.background-text-other {
+  background-color: $color-text-other;
+  border-radius: 0.5rem;
+}
+.background-1 {
+  background-color: $color-background;
+}
 
 .margin-top-big {
   margin-top: 8rem;

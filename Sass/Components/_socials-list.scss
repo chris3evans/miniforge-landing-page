@@ -1,0 +1,29 @@
+.socials {
+  &--list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &--item {
+    &:not(:last-of-type) {
+      margin-right: 3rem;
+    }
+  }
+
+  &--icon {
+    fill: $color-text-other;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  #icon-facebook:hover {
+    fill: $color-facebook;
+  }
+
+  #icon-instagram:hover {
+    fill: $color-instagram;
+  }
+}
