@@ -385,6 +385,31 @@ body {
   border: none;
 }
 
+@media (max-width: 75em) {
+  #mc_embed_signup {
+    height: 35rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  #mc_embed_signup {
+    height: 35rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  #mc_embed_signup {
+    width: 90%;
+    height: 37rem;
+  }
+}
+
+@media (max-width: 18.75em) {
+  #mc_embed_signup {
+    height: 40rem;
+  }
+}
+
 .mc-field-group:not(:last-of-type) {
   margin: 1.5rem 0rem;
 }
@@ -393,6 +418,12 @@ body {
   color: #141414;
   margin-left: 1rem;
   font-size: 2rem;
+}
+
+@media (max-width: 37.5em) {
+  .clear {
+    margin-top: 3rem;
+  }
 }
 
 .button {
