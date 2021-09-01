@@ -7,6 +7,10 @@
     display: flex;
     border-bottom: 0.1rem solid $color-text-other;
     padding: 2rem;
+
+    @include respond(phone-big) {
+      padding: 1rem;
+    }
   }
 
   &__item {
@@ -29,5 +33,9 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
+    @include respond(phone-big) {
+      font-size: 6rem;
+    }
   }
 }

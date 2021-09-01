@@ -18,5 +18,15 @@
     height: 10rem;
     width: 10rem;
     margin-right: 2rem;
+
+    @include respond(tab-port) {
+      height: 9rem;
+      width: 9rem;
+    }
+    @include respond(phone-big) {
+      margin-right: 0rem;
+      height: 7rem;
+      widht: 7rem;
+    }
   }
 }

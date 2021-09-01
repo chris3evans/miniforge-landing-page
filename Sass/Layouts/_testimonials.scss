@@ -7,6 +7,10 @@
     position: relative;
     overflow: hidden;
 
+    @include respond(tab-port) {
+      height: 47rem;
+    }
+
     .slide {
       transition: all 0.7s;
     }
@@ -20,6 +24,13 @@
     align-items: center;
     background-color: transparent;
     z-index: 1;
+
+    @include respond(tab-port) {
+      top: 40rem;
+    }
+    @include respond(phone-big) {
+      top: 32rem;
+    }
   }
 
   .slider--dot {
@@ -62,15 +73,36 @@
         line-height: 1rem;
         color: $color-text-other;
         z-index: 3;
+
+        @include respond(tab-port) {
+          font-size: 40rem;
+        }
+        @include respond(phone-big) {
+          font-size: 30rem;
+        }
       }
 
       #left-quotation-mark {
         top: 9rem;
         left: -1rem;
+
+        @include respond(tab-port) {
+          left: 0rem;
+        }
+        @include respond(phone-big) {
+          top: 6rem;
+        }
       }
       #right-quotation-mark {
         bottom: -7rem;
         right: -1rem;
+
+        @include respond(tab-port) {
+          right: 0rem;
+        }
+        @include respond(phone-big) {
+          bottom: -2rem;
+        }
       }
 
       &__image {
@@ -80,6 +112,10 @@
         position: relative;
         z-index: 5;
         border-radius: 0.5rem;
+
+        @include respond(phone-big) {
+          margin-bottom: 8rem;
+        }
       }
     }
   }

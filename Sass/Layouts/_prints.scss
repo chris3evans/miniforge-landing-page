@@ -1,15 +1,14 @@
 .section-prints {
-  /*background-image: linear-gradient(
-    to top left,
-    $color-background-3,
-    $color-text-other
-  );*/
-
   .print {
     &--image {
       width: 100%;
       box-shadow: 0rem 1rem 3rem rgba(black, 0.8);
       border-radius: 0.5rem;
+    }
+
+    @include respond(tab-port) {
+      width: 90%;
+      margin: 0 auto;
     }
   }
 }
