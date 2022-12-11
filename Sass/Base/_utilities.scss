@@ -33,6 +33,20 @@
   opacity: 0;
   display: none;
 }
+.red-line {
+  &::after {
+    content: "";
+    width: 79%;
+    height: 2px;
+    background-color: $color-button;
+    margin: 0 auto;
+
+    @include respond(phone-big) {
+      margin-bottom: 3rem;
+      width: 92%;
+    }
+  }
+}
 
 .margin-top-big {
   margin-top: 8rem;
@@ -45,7 +59,7 @@
   margin-top: 6rem;
 }
 .margin-top-small {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .margin-bottom-big {
@@ -53,7 +67,18 @@
 }
 .margin-bottom-med {
   margin-bottom: 6rem;
+
+  @include respond(phone-big) {
+    margin-bottom: 3rem;
+  }
 }
 .margin-bottom-small {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.pad-top-small {
+  padding-top: 3rem;
+}
+.pad-bottom-small {
+  padding-bottom: 3rem;
 }

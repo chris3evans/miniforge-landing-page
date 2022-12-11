@@ -8,12 +8,14 @@
     margin: 2rem 0rem;
   }
   @include respond(phone-big) {
-    margin: 1rem 0rem;
+    margin-top: 3rem;
+    margin-bottom: -3rem;
   }
 
   &--btn {
     padding: 4rem 10rem;
     background-color: $color-button;
+    color: $color-text-important;
     border: none;
     border-radius: 1rem;
     cursor: pointer;
@@ -26,8 +28,7 @@
 
     @include respond(phone-big) {
       padding: 3rem 8rem;
-      font-size: 3rem;
-      font-weight: 400;
+      font-size: 2rem;
     }
 
     &:hover {

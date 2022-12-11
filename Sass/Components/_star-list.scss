@@ -25,14 +25,7 @@
     font-size: 8rem;
     color: $color-text-important;
 
-    background-image: linear-gradient(
-      to right,
-      rgb(255, 255, 0),
-      rgb(255, 166, 0)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: rgb(255, 255, 0);
 
     @include respond(phone-big) {
       font-size: 6rem;

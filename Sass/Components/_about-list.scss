@@ -4,12 +4,20 @@
   flex-direction: column;
   align-items: center;
 
+  @include respond(phone-big) {
+    margin-bottom: 2rem;
+  }
+
   &__item {
     display: flex;
     align-items: center;
 
     &:not(:last-of-type) {
       margin-bottom: 2rem;
+
+      @include respond(phone-big) {
+        margin-bottom: 4rem;
+      }
     }
   }
 

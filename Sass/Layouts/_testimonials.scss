@@ -1,6 +1,4 @@
 .section-testimonials {
-  // Slider
-
   .slider {
     width: 100%;
     height: 50rem;
@@ -9,6 +7,9 @@
 
     @include respond(tab-port) {
       height: 47rem;
+    }
+    @include respond(phone-big) {
+      height: 40rem;
     }
 
     .slide {
@@ -40,13 +41,12 @@
     border: none;
     cursor: pointer;
     transition: all 0.3s;
+    background-color: $color-text-other;
   }
 
   #dot--1 {
     margin-right: 1.5rem;
   }
-
-  // Testimonial Slides
 
   .testimonial {
     display: flex;
@@ -63,7 +63,8 @@
     &--content {
       position: relative;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       margin-top: 4rem;
 
       #left-quotation-mark,
@@ -115,6 +116,7 @@
 
         @include respond(phone-big) {
           margin-bottom: 8rem;
+          width: 95%;
         }
       }
     }
@@ -126,5 +128,5 @@
 }
 
 .active {
-  background-color: $color-button;
+  background-color: $color-button !important;
 }

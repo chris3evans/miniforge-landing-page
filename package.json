@@ -1,15 +1,19 @@
 {
-  "name": "specterross",
+  "name": "miniforge",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "default": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "node-sass Sass/main.scss CSS/styles.css -w"
+    "compile:sass": "node-sass Sass/main.scss CSS/styles.css -w",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Chris Evans",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^6.0.1"
-  }
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "node-sass": "^6.0.1",
+    "parcel": "^2.0.0-rc.0"
+  },
+  "dependencies": {}
 }

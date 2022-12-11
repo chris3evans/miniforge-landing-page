@@ -74,12 +74,15 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 3rem;
   background-color: #292929;
 }
 
+.container {
+  padding: 3rem;
+}
+
 @media (max-width: 56.25em) {
-  body {
+  .container {
     padding: 0rem;
   }
 }
@@ -128,6 +131,7 @@ body {
 
 .text span {
   color: #ff4500;
+  font-weight: 700;
 }
 
 .center {
@@ -189,6 +193,21 @@ body {
   display: none;
 }
 
+.red-line::after {
+  content: "";
+  width: 79%;
+  height: 2px;
+  background-color: #ff4500;
+  margin: 0 auto;
+}
+
+@media (max-width: 37.5em) {
+  .red-line::after {
+    margin-bottom: 3rem;
+    width: 92%;
+  }
+}
+
 .margin-top-big {
   margin-top: 8rem;
 }
@@ -204,7 +223,7 @@ body {
 }
 
 .margin-top-small {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .margin-bottom-big {
@@ -215,8 +234,22 @@ body {
   margin-bottom: 6rem;
 }
 
+@media (max-width: 37.5em) {
+  .margin-bottom-med {
+    margin-bottom: 3rem;
+  }
+}
+
 .margin-bottom-small {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.pad-top-small {
+  padding-top: 3rem;
+}
+
+.pad-bottom-small {
+  padding-bottom: 3rem;
 }
 
 .about--list {
@@ -231,6 +264,12 @@ body {
           align-items: center;
 }
 
+@media (max-width: 37.5em) {
+  .about--list {
+    margin-bottom: 2rem;
+  }
+}
+
 .about--list__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,6 +281,12 @@ body {
 
 .about--list__item:not(:last-of-type) {
   margin-bottom: 2rem;
+}
+
+@media (max-width: 37.5em) {
+  .about--list__item:not(:last-of-type) {
+    margin-bottom: 4rem;
+  }
 }
 
 .about--list__icon {
@@ -285,13 +330,15 @@ body {
 
 @media (max-width: 37.5em) {
   .cta {
-    margin: 1rem 0rem;
+    margin-top: 3rem;
+    margin-bottom: -3rem;
   }
 }
 
 .cta--btn {
   padding: 4rem 10rem;
   background-color: #ff4500;
+  color: white;
   border: none;
   border-radius: 1rem;
   cursor: pointer;
@@ -307,8 +354,7 @@ body {
 @media (max-width: 37.5em) {
   .cta--btn {
     padding: 3rem 8rem;
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 2rem;
   }
 }
 
@@ -380,7 +426,7 @@ body {
   width: 80%;
   top: 18rem;
   z-index: 30;
-  height: 32rem;
+  height: 34rem;
   border-radius: 0.5rem;
   border: none;
 }
@@ -541,11 +587,7 @@ body {
 .testimonial--stars__icon {
   font-size: 8rem;
   color: white;
-  background-image: -webkit-gradient(linear, left top, right top, from(yellow), to(#ffa600));
-  background-image: linear-gradient(to right, yellow, #ffa600);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: yellow;
 }
 
 @media (max-width: 37.5em) {
@@ -555,10 +597,10 @@ body {
 }
 
 .section-about {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../Images/Image1.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Images/Image1.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../Images/Image5.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Images/Image5.jpg");
   background-size: cover;
-  padding: 2rem;
+  background-position: 50% 5%;
 }
 
 .section-about .about {
@@ -661,6 +703,12 @@ body {
   width: 30%;
 }
 
+@media (max-width: 37.5em) {
+  .image--logo {
+    width: 50%;
+  }
+}
+
 .section-prints .print--image {
   width: 100%;
   -webkit-box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.8);
@@ -685,6 +733,12 @@ body {
 @media (max-width: 56.25em) {
   .section-testimonials .slider {
     height: 47rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .section-testimonials .slider {
+    height: 40rem;
   }
 }
 
@@ -730,6 +784,7 @@ body {
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  background-color: #a6a6a6;
 }
 
 .section-testimonials #dot--1 {
@@ -760,9 +815,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 4rem;
 }
 
@@ -835,6 +894,7 @@ body {
 @media (max-width: 37.5em) {
   .section-testimonials .testimonial--content__image {
     margin-bottom: 8rem;
+    width: 95%;
   }
 }
 
@@ -844,6 +904,6 @@ body {
 }
 
 .active {
-  background-color: #ff4500;
+  background-color: #ff4500 !important;
 }
 /*# sourceMappingURL=main.css.map */
